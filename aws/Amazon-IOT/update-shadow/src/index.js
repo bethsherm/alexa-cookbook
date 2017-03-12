@@ -22,9 +22,9 @@ var SkillMessagesUS = {
 };
 
 var SkillMessagesDE = {
-    'welcome'       :'hallo.  sagen so was, gehe zu london oder gehe zu berlin',
+    'welcome'       :'hallo.  sagen so was, reisen nach london oder reisen nach berlin',
     'cityresponse'  :'sie haben gefragt',
-    'help'          :'sagen so was, gehe zu london oder gehe zu berlin',
+    'help'          :'sagen so was, reisen nach london oder reisen nach berlin',
     'cancel'        :'auf wiedersehen',
     'stop'          :'auf wiedersehen'
 };

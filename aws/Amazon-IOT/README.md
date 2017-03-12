@@ -13,7 +13,7 @@ The virtual Thing is known as a "thing shadow".  Read more on the [AWS IOT Thing
 ### Table of Contents
  * [setup-thing](setup-thing#title)
  * [update-shadow](update-shadow#title)
-
+ * [webapp-thing](webapp-thing#title)
 
 ### IOT configuration settings
 
