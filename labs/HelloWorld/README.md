@@ -6,8 +6,6 @@
 
 
 ### This is a simple tutorial to introduce a simple Alexa skill and code.
-#### Pre-requisites:
- * Accounts on [AWS.Amazon.com](https://aws.amazon.com/) and [Developer.Amazon.com](https://developer.amazon.com/)
 
 ### Tutorial Steps
 #### Code
@@ -43,7 +41,7 @@
 
 
 #### Skill
-1. Login to [developer.amazon.com] and click Alexa, then Alexa Skills Kit
+1. Login to [developer.amazon.com](https://developer.amazon.com) and click Alexa, then Alexa Skills Kit
 1. Create a new Skill called HelloWorld with invocation name ```hello world```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
     ```
@@ -78,7 +76,11 @@
 * Modify code within the Lambda function editor to have Alexa say something besides Hello World.
 * Test and hear Alexa say the new response.
 
-## Lab 1 <a id="labs"></a>
+
+# Labs <a id="labs"></a>
+
+## Lab 1
+
 This lab will have you extend your skill by adding new Intents.  First we will add the intent to the skill definition.
 
 1. Within the [Dev Portal](https://developer.amazon.com/edw/home.html#/skills/list) skill definition, click on the Interaction Model page.
@@ -166,8 +168,13 @@ this.emit(':tell', 'goodbye, ' + myName, 'try again');
 
 Test your skill.  Say "my name is sam".  Then say "stop".  You should hear a personalized goodbye message.
 
-
 ## Lab 4
+Your skill can make calls to external web services, APIs and REST services.
+
+Read and follow the tutorial in the [external-calls/httpsGet](../../external-calls/httpsGet) folder, to create a starter skill that calls a web service.
+
+
+## Lab 5
 
 Add short MP3 audio clips to your output via SSML.
 
@@ -196,7 +203,7 @@ Read the [documentation page](https://developer.amazon.com/public/solutions/alex
 You can use a tool such as "ffmpeg" or "vlc" to down-sample your existing MP3 content.  You can host the MP3s on your own website, or within the AWS S3 service.  Simply create an S3 bucket, upload your files, and set the files to be public, and note file properties which contain the public URL to the file.
 
 
-## Lab 5
+## Lab 6
 Your skill code can create a custom response based on the geographic region of the user, whether they are in US, GB, or DE.
 
 You can add conditional logic like this:
@@ -222,7 +229,7 @@ You can add conditional logic like this:
 Based on Dean Bryen's post [How to Build a Multi-Language Alexa Skill](https://developer.amazon.com/blogs/post/Tx2XUAQ741IYQI4/how-to-build-a-multi-language-alexa-skill)
 
 
-## Lab 6
+## Lab 7
 
 Add DynamoDB to your skill.  Within your exports.handler, add one new line:
 
@@ -256,11 +263,11 @@ Note:
  * The previous session.attributes is loaded again when the user starts the skill again.
  * The first 25GB of data stored in DynamoDB is always free.
 
-## Lab 7
+## Lab 8
 Controlling IOT Devices
 
 
-## Lab 8 (optional)
+## Lab 9 (optional)
 Account Linking allows your users to enable your skill, and then enter their credentials to your existing website or directory.
 This is how Uber and Domino's Pizza links an Alexa user to a user within their service.  The skill can gain access to user attributes, and the skill can make authenticated calls into the service using an OAuth token that is automatically kept for the user with their enabled skill.
 
@@ -270,13 +277,14 @@ Account linking is required as a component of a Smart Home skill.
 
 Setup Account Linking to "Login with Amazon" as in the blog post.  Welcome the user by saying their full name.
 
-## Lab 9
+## Lab 10
 
 Using the **alexa-sdk**
 
 1. Search the internet for ```npm alexa sdk```
 1. Click the first link to open the alexa-sdk node module project page
 1. Read and scroll through the documentation and try out the code snippets in your skill.
+1. See if you can implement the Hi-Low guessing game described in the documentation.
 
 
 
