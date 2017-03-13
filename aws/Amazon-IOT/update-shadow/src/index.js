@@ -48,7 +48,7 @@ exports.handler = function(event, context, callback) {
         case 'de-DE':
             SkillMessages = SkillMessagesDE;
             break;
-        case 'default':
+        default:
             SkillMessages = SkillMessagesUS;
             break;
     }
