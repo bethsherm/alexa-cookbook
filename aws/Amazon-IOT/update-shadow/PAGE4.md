@@ -19,10 +19,12 @@ Here is how to copy and paste your Lambda function ARN to the Skill endpoint.
 
 #### Test your skill
 
-Open your skill and say 'hello'.  Verify the response is as expected.
+* Open your skill and say 'hello'.  Verify the response is as expected.
+* Say something like "reisen nach Frankfurt" or "go to Belfast" or "go to Berlin".
 
-#### Further Reading
-See the [Testing](../../testing#title) guide for more testing options.
+
+#### Add the dynamic web page
+ * Create the single-page [webapp-thing](../webapp-thing/README.md#title)
 
 
 

@@ -99,13 +99,13 @@ Next, we will add a handler to the AWS Lambda function
 
 Finally, we will add handlers for default requests such as Help, Stop, and Cancel
 
-1. Within the Lambda code, add handlers for the following events:
- + AMAZON.HelpIntent  AMAZON.StopIntent  AMAZON.CancelIntent
+1. Within the Lambda code, add handlers for each of the following three events:
+ + ```AMAZON.HelpIntent```  ```AMAZON.StopIntent```  ```AMAZON.CancelIntent```
 
-1. Customize the message in each handler
+1. Customize the say message in each handler.
 1. Ensure the Help handler action is ```:ask```, while the Cancel and Stop handlers are ```:tell```.
 
-* "tell" will stop the skill after Alexa speaks.  "ask" will cause Alexa to listen again for the next question or command. *
+* ```:tell``` will stop the skill after Alexa speaks.  ```:ask``` will cause Alexa to listen again for the next question or command. *
 Feel free to add additional intents and handlers to make your skill unique.
 
 ## Lab 2
@@ -148,7 +148,7 @@ Also add the following line to your Sample Utterances:  ```MyNameIsIntent my nam
 
 Add session attributes to your skill to remember things.
 
-Based on your work in Lab 2, your lambda function now has a MyNameIsIntent handler.
+Based on your work in the previous lab, your lambda function now has a MyNameIsIntent handler.
 
 Add the following line of code after you have retrieved the firstname slot value into the myName variable:
 
@@ -172,6 +172,11 @@ Test your skill.  Say "my name is sam".  Then say "stop".  You should hear a per
 Your skill can make calls to external web services, APIs and REST services.
 
 Read and follow the tutorial in the [external-calls/httpsGet](../../external-calls/httpsGet) folder, to create a starter skill that calls a web service.
+
+Once you have this skill working:
+ + Review the Lambda code.
+ + Change the value of the myRequest from 'Florida' to 'California' or any other state.
+ + Recalling what you have learned so far, try to add an Intent and Slot so that the user can say which state they want.
 
 
 ## Lab 5
@@ -230,6 +235,16 @@ Based on Dean Bryen's post [How to Build a Multi-Language Alexa Skill](https://d
 
 
 ## Lab 7
+Controlling IOT Devices
+
+Read and follow the tutorial in the [aws/Amazon-IOT](../../aws/Amazon-IOT) folder.  You will:
+
+ + Create a new virtual IOT device
+ + Update it via a skill Lambda function
+ + Build a web app to simulate a device and show updates happening
+
+
+## Lab 8
 
 Add DynamoDB to your skill.  Within your exports.handler, add one new line:
 
@@ -263,8 +278,6 @@ Note:
  * The previous session.attributes is loaded again when the user starts the skill again.
  * The first 25GB of data stored in DynamoDB is always free.
 
-## Lab 8
-Controlling IOT Devices
 
 
 ## Lab 9 (optional)

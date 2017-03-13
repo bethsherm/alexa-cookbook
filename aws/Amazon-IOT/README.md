@@ -10,10 +10,10 @@ You can start by creating a virtual Thing within AWS that can be controlled by y
 Later, you can configure a physical thing, such as a Raspberry PI device, to connect to the IOT network and receive updates to stay in sync with the virtual Thing.
 The virtual Thing is known as a "thing shadow".  Read more on the [AWS IOT Thing Shadow Guide](http://docs.aws.amazon.com/iot/latest/developerguide/using-thing-shadows.html).
 
-### Table of Contents
- * [setup-thing](setup-thing#title)
- * [update-shadow](update-shadow#title)
- * [webapp-thing](webapp-thing#title)
+### Table of Contents (setup steps)
+1. [setup-thing](setup-thing#title)
+1. [update-shadow](update-shadow#title)
+1. [webapp-thing](webapp-thing#title)
 
 ### IOT configuration settings
 
