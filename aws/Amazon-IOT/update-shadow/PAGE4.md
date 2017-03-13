@@ -17,6 +17,13 @@ Here is how to copy and paste your Lambda function ARN to the Skill endpoint.
 1. If you get an error, confirm you have previously added an ASK Trigger to your Lambda function.
 
 
+
+#### Add IOT permissions to your Lambda IAM Role
+
+1. Within the AWS IAM console, locate and click on the role used by your Lambda function, such as ```lambda_basic_execution```
+1. Click the blue button to add IOT Full Access policy to this role.
+
+
 #### Test your skill
 
 * Open your skill and say 'hello'.  Verify the response is as expected.
