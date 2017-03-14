@@ -6,7 +6,8 @@
 1. Login to [developer.amazon.com](https://developer.amazon.com) and click Alexa, then Alexa Skills Kit.
 1. Create a new Skill called **Magic Answers** with invocation name ```magic answers```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
-    ```
+
+```
 {
   "intents": [
     {
@@ -29,8 +30,8 @@
     }
   ]
 }
-
-    ```
+```
+    
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
     ```
     MyIntent {MyQuestion}
