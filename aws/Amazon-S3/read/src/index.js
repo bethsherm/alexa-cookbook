@@ -46,7 +46,18 @@ var handlers = {
             }
         );
 
+    },
+
+    'AMAZON.HelpIntent': function () {
+        this.emit(':ask', 'ask me a yes or no question.', 'try again');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', 'Goodbye!');
+    },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', 'Goodbye!');
     }
+
 };
 
 //    END of Intent Handlers {} ========================================================================================

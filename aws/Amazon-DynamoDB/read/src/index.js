@@ -37,7 +37,7 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('MyIntent');
+        this.emit(':ask', 'welcome to magic answers.  ask me a yes or no question.', 'try again');
     },
 
     'MyIntent': function () {
@@ -46,10 +46,19 @@ var handlers = {
 
         readDynamoItem(params, myResult=>{
 
-            this.emit(':ask', myResult + '. next question?', 'try again');
+            this.emit(':ask', myResult, 'try again');
 
         });
 
+    },
+    'AMAZON.HelpIntent': function () {
+        this.emit(':ask', 'ask me a yes or no question.', 'try again');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', 'Goodbye!');
+    },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', 'Goodbye!');
     }
 };
 
