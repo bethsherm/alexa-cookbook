@@ -9,8 +9,8 @@ Create a new AWS Cognito Identity Pool
 
 1. Login to the AWS Cognito console
 1. Click "Manage Federated Identities"
-1. Click "Create new identity pool" such as MyPool
-1. Name your pool and check the box to "Enable access to unauthenticated providers"
+1. Click "Create new identity pool" such as ```MyPool```
+ + Check the box to "Enable access to unauthenticated providers"
 1. Once your pool is created, click on the "Sample Code" menu item
 1. Within your code, find the RED string called Identity Pool ID and record this as your IdentityPoolId.
 
