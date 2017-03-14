@@ -252,6 +252,7 @@ When the user re-launches the skill at a later time, the session attributes are 
 
 #### Pre-requisites:
 Complete the lab exercises 1-3.  You should have a Hello World skill that recalls the user's name upon exit.
+Review the [Lab 3 solution](https://gist.github.com/robm26/aec28e68137e776aea9722a9fa7b4d56) to quickly create this skill.
 
 
 #### Lab Steps:
@@ -288,6 +289,15 @@ Note:
  * The previous session.attributes is loaded again when the user starts the skill again.
  * The first 25GB of data stored in DynamoDB is always free.
 
+#### Lab Demo
+Test the full lifecycle of your skill to verify your name is remembered.
+
+1. Launch your skill or begin testing in the Skill Test page.
+1. Say "my name is sam"
+1. Say "stop"
+ + Your session has now ended and the "name" attribute should be stored in the DynamoDB table.  This is equivalent of an Echo user allowing the session to end and waiting for some time.
+1. Begin testing the skill again.  Say "help"
+ + You should hear "here is the help for you, sam"
 
 
 ## Lab 9 (optional)
