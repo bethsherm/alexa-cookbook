@@ -79,7 +79,7 @@
 
 # Labs <a id="labs"></a>
 
-## Lab 1
+## Lab 1 - New Intents
 
 This lab will have you extend your skill by adding new Intents.  First we will add the intent to the skill definition.
 
@@ -108,7 +108,7 @@ Finally, we will add handlers for default requests such as Help, Stop, and Cance
 * ```:tell``` will stop the skill after Alexa speaks.  ```:ask``` will cause Alexa to listen again for the next question or command. *
 Feel free to add additional intents and handlers to make your skill unique.
 
-## Lab 2
+## Lab 2 - Intents with Slots
 
 This lab will have you add Intents with Slots.
 Click to your skill's Interaction Model, Intent Schema box.
@@ -144,7 +144,7 @@ Also add the following line to your Sample Utterances:  ```MyNameIsIntent my nam
 
  ``` this.emit(':ask', 'hello, ' + myName, 'try again');  ```
 
-## Lab 3
+## Lab 3 - Session Attributes
 
 Add session attributes to your skill to remember things.
 
@@ -168,7 +168,7 @@ this.emit(':tell', 'goodbye, ' + myName, 'try again');
 
 Test your skill.  Say "my name is sam".  Then say "stop".  You should hear a personalized goodbye message.
 
-## Lab 4
+## Lab 4 - Calling Web Services
 Your skill can make calls to external web services, APIs and REST services.
 
 Read and follow the tutorial in the [external-calls/httpsGet](../../external-calls/httpsGet) folder, to create a starter skill that calls a web service.
@@ -179,7 +179,7 @@ Once you have this skill working:
  + Recalling what you have learned so far, try to add an Intent and Slot so that the user can say which state they want.
 
 
-## Lab 5
+## Lab 5 - SSML Audio
 
 Add short MP3 audio clips to your output via SSML.
 
@@ -208,7 +208,7 @@ Read the [documentation page](https://developer.amazon.com/public/solutions/alex
 You can use a tool such as "ffmpeg" or "vlc" to down-sample your existing MP3 content.  You can host the MP3s on your own website, or within the AWS S3 service.  Simply create an S3 bucket, upload your files, and set the files to be public, and note file properties which contain the public URL to the file.
 
 
-## Lab 6
+## Lab 6 - Locale
 Your skill code can create a custom response based on the geographic region of the user, whether they are in US, GB, or DE.
 
 You can add conditional logic like this:
@@ -234,7 +234,7 @@ You can add conditional logic like this:
 Based on Dean Bryen's post [How to Build a Multi-Language Alexa Skill](https://developer.amazon.com/blogs/post/Tx2XUAQ741IYQI4/how-to-build-a-multi-language-alexa-skill)
 
 
-## Lab 7
+## Lab 7 - IOT Updates
 Controlling IOT Devices
 
 Read and follow the tutorial in the [aws/Amazon-IOT](../../aws/Amazon-IOT) folder.  You will:
@@ -244,9 +244,19 @@ Read and follow the tutorial in the [aws/Amazon-IOT](../../aws/Amazon-IOT) folde
  + Build a web app to simulate a device and show updates happening
 
 
-## Lab 8
+## Lab 8 - Session in DynamoDB
 
-Add DynamoDB to your skill.  Within your exports.handler, add one new line:
+Skills written with the Node.JS ```alexa-sdk``` can easily store their session attributes in DynamoDB when the skill terminates.
+
+When the user re-launches the skill at a later time, the session attributes are reloaded and available to the skill.
+
+#### Pre-requisites:
+Complete the lab exercises 1-3.  You should have a Hello World skill that recalls the user's name upon exit.
+
+
+#### Lab Steps:
+
+Within your Lambda function's ```exports.handler``` block, add one new line:
 
 ```
 exports.handler = function(event, context, callback) {

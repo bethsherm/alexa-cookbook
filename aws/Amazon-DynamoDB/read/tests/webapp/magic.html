@@ -8,19 +8,14 @@
 
     <script>
 
-        const REGION   = 'eu-west-1';
-        var cognitoIdentityPoolID =   'eu-west-1:819bc82c-9b43-40fa-b216-a9d8e4b6d592';
-
-        // Login to AWS Cognito, and create your own Federated Itentity Pool, allowing unauthenticated identities.
-        // It created two new IAM Roles.  Edit the Unauthenticated Pool role, and attach Dynamo policy
-
-        // A sample Pool ID is   "us-east-1:e19c31b7-b092-42b4-8d77-2b7939115700";
+        const REGION         = 'eu-west-1';
+        var cognitoIdentityPoolId = 'eu-west-1:819bc82c-9b43-40fa-b216-a9d8e4b6d000';
 
         var docClient;
 
         AWS.config.region = REGION;
         AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-            IdentityPoolId: cognitoIdentityPoolID
+            IdentityPoolId: cognitoIdentityPoolId
         });
         getAWSCredentials();
 
