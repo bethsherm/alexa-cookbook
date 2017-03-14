@@ -13,7 +13,7 @@ You first create a table, which is like traditional SQL table.  Each table must 
 
 ### IAM Role Permissions
 
-The following IAM Policy can be modified and added to your Lambda function's IAM role to allow reading and writing to a specific S3 bucket.
+The following IAM Policy can be modified and added to your Lambda function's IAM role to allow reading and writing to a specific table.
 See the [IAM Policies](../IAM_POLICIES.md) page for more details.
 
 ```

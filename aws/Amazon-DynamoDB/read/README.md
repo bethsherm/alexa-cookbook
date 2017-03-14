@@ -3,10 +3,11 @@
 
 Your Lambda function can query a DynamoDB database table for data in order to prepare a custom speech response.
 
-#### Instructions for deploying this sample skill
+### Instructions for deploying this sample skill
 
 
-Grant DynamoDB permissions via IAM:
+#### Grant DynamoDB permissions via IAM:
+
 1. From the AWS console, click on IAM
 1. Locate and click on the role you use with your Lambda functions, such as "lambda_basic_execution"
 1. Click the "Attach Policy" button
@@ -14,7 +15,8 @@ Grant DynamoDB permissions via IAM:
 1. For a production scenario, choose a more fine-grained policy granting access to certain resources.
  *    Review [IAM Policies](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html)
 
-Create a new table:
+#### Create a new table:
+
 1. Login to the [AWS Console - DynamoDB](https://console.aws.amazon.com/dynamodb/home)
 1. From the left menu, click Tables
 1. Click the blue "Create Table" button
@@ -25,7 +27,8 @@ Create a new table:
  * At the bottom of the Overview tab, locate the Amazon Resource Name (ARN) for this table.
  * Remember this Table's ARN for future reference (example ARN ```arn:aws:dynamodb:eu-west-1:589662300000:table/yesno```  )
 
-Create a table item:
+#### Create a table item:
+
 1. Click on the name of your new table
 1. Click on the blue "Create Item" button
 1. On the top left, click on the dropdown called "Tree" and change it to "Text"
