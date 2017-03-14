@@ -27,7 +27,7 @@ Here is how to copy and paste your Lambda function ARN to the Skill endpoint.
 
 #### Magic Answers Web App
 
-Setup the [Magic Answers Web App](../tests/webapp/README.md) to allow for easy updating of the DynamoDB table.
+Setup the [Magic Answers Web App](tests/webapp/README.md) to allow for easy updating of the DynamoDB table.
 
 
 
