@@ -38,8 +38,20 @@ You can create a web app that makes it easy for a user to update a DynamoDB tabl
    + You can open the page right from within your project folder, you do not need to host it on a website.
  + Click the YES and NO buttons.  You should see the "Current Message" label at the top of the page update.  This label only updates after a successful DynamoDB table update.
 
+
 #### Debug
  * If there is any issue, open your browser's Debug Console and look for any Javascript errors for clues.
+
+#### Play
+Click the YES button.  Invite your friend to try your skill.
+
+1. Say "alexa, open magic answers"
+1. Say "am I a good developer?"
+ + Alexa responds with "yes"
+1. Have your friend ask additional questions.
+1. Click YES or NO as the person is asking the question.
+ + Alexa will give the correct answer.
+
 
 <hr />
 
