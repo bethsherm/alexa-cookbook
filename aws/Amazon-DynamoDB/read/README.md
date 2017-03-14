@@ -38,7 +38,6 @@ Create a table item:
 
 
 <hr />
- *You can learn more about DynamoDB from the [Getting Started with DynamoDB](http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/Welcome.html) documentation.*
 
 Back to the [Home Page](../../README.md#title)
 
