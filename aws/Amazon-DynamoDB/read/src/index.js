@@ -43,10 +43,16 @@ var handlers = {
     'MyIntent': function () {
 
         var MyQuestion = this.event.request.intent.slots.MyQuestion.value;
+        console.log('MyQuestion : ' + MyQuestion);
 
         readDynamoItem(params, myResult=>{
+            var say = '';
 
-            this.emit(':ask', myResult, 'try again');
+            say = myResult;
+
+            say = 'you asked, ' + MyQuestion + '. The answer is: ' + myResult;
+
+            this.emit(':ask', say, 'try again');
 
         });
 
