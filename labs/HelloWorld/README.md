@@ -179,6 +179,24 @@ Once you have this skill working:
  + Recalling what you have learned so far, try to add an Intent and Slot so that the user can say which state they want.
 
 
+For example, you can repeat the steps from Lab 2, to add a new Intent to the Intent Schema, with the following slot:
+
+```
+        {
+          "name":"usstate",
+          "type":"AMAZON.US_STATE"
+        }
+```
+
+Be sure to add a corresponding Sample Utterance line, such as:
+
+```NewIntent go to {usstate}```
+
+Then, within your Lambda code, you can get the value of the slot via:
+
+```var myState = this.event.request.intent.slots.usstate.value;```
+
+
 ## Lab 5 - SSML Audio
 
 Add short MP3 audio clips to your output via SSML.
