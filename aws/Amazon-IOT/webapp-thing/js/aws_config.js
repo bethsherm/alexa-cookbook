@@ -26,7 +26,7 @@ const mqttEndpoint   = "a3npzlqqmmzqo.iot.eu-west-1.amazonaws.com";
 //  Click Roles
 //  Click on the new Unauth role, such as Cognito_MyPoolUnauth_Role
 //  Click the "Attach Policy" button to add the appropriate permissions to your role
-//   For the IOT webapp, choose AWSIoTDataAccess or define a specific set of permissions
+//   For this IOT webapp, choose AWSIoTDataAccess or define a specific set of permissions
 //
 
 // Cognito Identity Pool ID
