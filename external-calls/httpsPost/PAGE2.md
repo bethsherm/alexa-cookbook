@@ -7,6 +7,7 @@
 1. Create a new Skill called **hello world** with invocation name ```hello world```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
 
+
 ```
 {
   "intents": [
