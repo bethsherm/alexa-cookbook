@@ -27,13 +27,13 @@
 }
 
 
-    ```
+```
 
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
 
-    ```
+```
     MyIntent hello
-    ```
+```
 
 Pause here and leave this browser tab open.
 

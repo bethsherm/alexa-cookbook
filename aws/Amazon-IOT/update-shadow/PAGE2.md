@@ -7,7 +7,7 @@
 1. Create a new Skill called **hello world** with invocation name ```hello world```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
 
-    ```
+```
 {
   "intents": [
     {
@@ -34,15 +34,15 @@
   ]
 }
 
-    ```
+```
 
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
 
-    ```
-    MyIntent hello
-    CityIntent go to {city}
-    CityIntent i am from {city}
-    ```
+```
+MyIntent hello
+CityIntent go to {city}
+CityIntent i am from {city}
+```
 
 Pause here and leave this browser tab open.
 
