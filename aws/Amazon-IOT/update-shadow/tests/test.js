@@ -27,7 +27,7 @@ var event =
                 "slots": {
                     "city": {
                         "name": "city",
-                        "value": "Berlin"
+                        "value": "Frankfurt"
                     }
                 }
             }
