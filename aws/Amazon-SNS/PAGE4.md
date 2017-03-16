@@ -17,9 +17,17 @@ Here is how to copy and paste your Lambda function ARN to the Skill endpoint.
 1. If you get an error, confirm you have previously added an ASK Trigger to your Lambda function.
 
 
+#### Update your Phone Number
+Review your Lambda source code, and update the target phone number:
+
+```const mobileNumber = '+1508259846';  // be sure to change this to YOUR mobile number ```
+
+
 #### Test your skill
 
-Open your skill and say 'hello'.  Verify the response is as expected.
+Open your skill and say 'hello'.  Verify that you receive a TXT message with emoji.  You can reply to the TXT with STOP to control future messages from AWS SNS.
+
+
 
 #### Further Reading
 See the [Testing](../../testing#title) guide for more testing options.
