@@ -26,14 +26,13 @@
   ]
 }
 
-
 ```
 
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
 
-    ```
-    MyIntent hello
-    ```
+```
+MyIntent hello
+```
 
 Pause here and leave this browser tab open.
 
@@ -43,4 +42,3 @@ Pause here and leave this browser tab open.
 
 
 <hr />
-Back to the [Home Page](../../README.md#title)
