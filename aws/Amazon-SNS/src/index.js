@@ -10,6 +10,7 @@
 
 var AWSregion = 'eu-west-1';  // us-east-1
 
+const mobileNumber = '+1508259846';  // be sure to change this to YOUR mobile number
 
 const emoji = {
     'thumbsup':     '\uD83D\uDC4D',
@@ -29,7 +30,7 @@ const bodyText = 'Hello! ' + emoji.smile + ' \n'
 
 
 const params = {
-    PhoneNumber: '+15082598463',
+    PhoneNumber: mobileNumber,
     Message: bodyText
 };
 
