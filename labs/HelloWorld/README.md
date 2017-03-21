@@ -15,11 +15,15 @@
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
 1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
-    ```
+
+```
         var Alexa = require('alexa-sdk');
 
         exports.handler = function(event, context, callback) {
             var alexa = Alexa.handler(event, context);
+
+            // alexa.dynamoDBTableName = 'YourTableName'; // creates new table for userid:session.attributes
+
             alexa.registerHandlers(handlers);
             alexa.execute();
         };
@@ -33,7 +37,8 @@
                 this.emit(':tell', 'Hello World from Alexa!');
             }
         };
-    ```
+```
+
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
 1. Click Next and create the function.
 1. Make note of the Lambda ARN, shown near the top right, such as
@@ -44,7 +49,8 @@
 1. Login to [developer.amazon.com](https://developer.amazon.com) and click Alexa, then Alexa Skills Kit
 1. Create a new Skill called HelloWorld with invocation name ```hello world```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
-    ```
+
+```
 {
   "intents": [
     {
@@ -63,12 +69,14 @@
   ]
 }
 
+```
 
-    ```
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
-    ```
-    MyIntent hello
-    ```
+
+```
+MyIntent hello
+```
+
 1. Configure the skill endpoint with the AWS Lambda ARN previously created.
 
 #### Test
@@ -277,6 +285,7 @@ Review the [Lab 3 solution](https://gist.github.com/robm26/aec28e68137e776aea972
 
 Within your Lambda function's ```exports.handler``` block, add one new line:
 
+
 ```
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -288,7 +297,8 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 ```
-Add permissions for your Lambda function to access DynamoDB:
+
+Add permissions for your Lambda function to access DynamoDB
 
 1. From within AWS Console, click on IAM, then Roles, then ```lambda_basic_execution```:
 1. Click "Attach Policy" and select a DynamoDB policy such as **AmazonDynamoDBFullAccess**

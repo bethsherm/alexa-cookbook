@@ -5,7 +5,7 @@ exports.handler = function(event, context, callback) {
 
     // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
 
-    // alexa.dynamoDBTableName = 'YourTableNameUK'; // creates new table for session.attributes
+    ///alexa.dynamoDBTableName = 'YourTableName'; // creates new table for session.attributes
 
     alexa.registerHandlers(handlers);
     alexa.execute();
