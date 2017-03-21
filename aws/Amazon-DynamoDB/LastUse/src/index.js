@@ -69,9 +69,22 @@ var handlers = {
         }
 
         var min = this.attributes['minutesSinceLast'];
+        var count = this.attributes['launchCount'];
+
+        var introSay = '';
+
+        if (count == 0) {
+            introSay = 'welcome new user, ';
+        } else {
+            if (min < 10) {
+                introSay = 'you again! it has only been ' + min + ' minutes! ';
+            } else {
+                introSay = 'welcome back. ';
+            }
+        }
 
 
-        this.emit(':ask', 'it has been ' + min + ' minutes. here is the help for you, ' + myName, 'try again');
+        this.emit(':ask', introSay + ' here is the help for you, ' + myName, 'try again');
 
     },
     'AMAZON.CancelIntent': function () {
