@@ -25,7 +25,8 @@ Here is how to copy and paste your Lambda function ARN to the Skill endpoint.
 1. Wait a few minutes
 1. Repeat
 
+You should hear a help message that informs you the time since your last visit.
 
 
 <hr />
-Back to the [Home Page](../../README.md#title)
+Back to the [Home Page](../../../README.md#title)
