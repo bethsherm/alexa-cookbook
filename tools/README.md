@@ -1,6 +1,16 @@
 ## Tools <a id="title"></a>
 ### Make me productive!
 
+### Design Tools
+
+One-page design sheets can be printed and used to sketch out ideas for a conversation with Alexa.
+
+* [Alexa Dialogue Design](https://www.amazon.com/clouddrive/share/5WMoGXcKHSWWSoRiC3VNFmBnEveQBdPnLZq711Iu3d?ref_=cd_ph_share_link_copy)
+* [Alexa Dialogue Design - Detailed](https://www.amazon.com/clouddrive/share/PLKDyDip6Jv1HK450NTTGzJZJB4QjDyYxTMlQgmWDCQ?ref_=cd_ph_share_link_copy)
+
+
+### Developer Tools
+
 The following tools will enhance your developer experience.
 
 * Have [Node.JS](https://nodejs.org/en/) on your laptop command-line, and become familiar with [NPM](https://www.npmjs.com), the Node Package Manager.
