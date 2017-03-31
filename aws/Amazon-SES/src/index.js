@@ -8,7 +8,7 @@
 // 1. Text strings =====================================================================================================
 //    Modify these strings and messages to change the behavior of your Lambda function
 
-var AWSregion = 'eu-west-1';  // us-east-1
+var AWSregion = 'us-east-1';  // eu-west-1
 
 var subject = 'Hello email for you' ;
 var bodyText = 'Hello! \n'

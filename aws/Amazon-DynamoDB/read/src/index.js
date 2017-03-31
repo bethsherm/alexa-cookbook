@@ -1,4 +1,4 @@
-// alexa-cookbook sample code
+    // alexa-cookbook sample code
 
 // There are three sections, Text Strings, Skill Code, and Helper Function(s).
 // You can copy and paste the entire file contents as the code for a new Lambda function,
@@ -8,7 +8,7 @@
 // 1. Text strings =====================================================================================================
 //    Modify these strings and messages to change the behavior of your Lambda function
 
-var AWSregion = 'eu-west-1';  // us-east-1
+var AWSregion = 'us-east-1';  // us-east-1
 
 var params = {
     TableName: 'yesno',

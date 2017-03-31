@@ -3,7 +3,7 @@
 // 1. Login to AWS IOT console, and select a Region at the top-right
 //      such as Ireland (eu-west-1)  or N. Virginia (us-east-1)
 
-const REGION         = 'eu-west-1';
+const REGION         = 'us-east-1';  // eu-west-1
 
 // 2. Click on Registry, and add a new Thing, such as waterPump
 
@@ -12,7 +12,7 @@ const ThingName      = 'waterPump';
 const SubscribeTopic = '$aws/things/' + ThingName + '/shadow/update/accepted';
 
 // 3. Click on the Interact menu item, to reveal the API Endpoint:
-const mqttEndpoint   = "a3npzlqqmmzqo.iot.eu-west-1.amazonaws.com";
+const mqttEndpoint   = "a3npzlqqmmzqo.iot.us-east-1.amazonaws.com";
 
 
 // 4. Login to the AWS Cognito console
@@ -30,4 +30,4 @@ const mqttEndpoint   = "a3npzlqqmmzqo.iot.eu-west-1.amazonaws.com";
 //
 
 // Cognito Identity Pool ID
-const IdentityPoolId = 'eu-west-1:c2489a27-b975-4239-8c6a-472e080b0fb0';
+const IdentityPoolId = 'us-east-1:583dd84a-7792-49a6-9ce5-5624f80378e7';

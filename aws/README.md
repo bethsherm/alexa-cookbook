@@ -16,7 +16,7 @@ This Node module is automatically included and available to all AWS Lambda funct
 You can further configure the AWS connection via the Config.  Certain functions require the region to be set.
 Alexa skill developers will likely be using AWS in one of two possible regions: ```eu-west-1``` or ```us-east-1```
 ```
-    AWS.config.update({region: 'eu-west-1'});  // us-east-1
+    AWS.config.update({region: 'us-east-1'});  // eu-west-1
 
 ```
 
