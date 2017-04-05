@@ -81,7 +81,7 @@ fs.readFile(MyDialog, function (err, data) {  // open dialog sequence file and r
 
         var tokenArray = lineArray[i].split(' ');
 
-        var requestType = tokenArray[0];
+        var requestType = tokenArray[0].replace('\r','');
 
 
         if (requestType =='LaunchRequest'
