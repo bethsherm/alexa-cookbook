@@ -33,6 +33,10 @@ If the test works, you should see a formatted JSON response similar to this:
 }
 ```
 
+#### TestFlow
+You can run a sequence of conversation events as a local test and view formatted results in your console window.
+[TestFlow](TestFlow/README.md#title)
+
 
 See also [tools](../tools#title)
 

@@ -1,0 +1,11 @@
+LaunchRequest
+StateRequestIntent usstate=Vermont
+StateRequestIntent usstate=California
+ISeeIntent animal=bear color=brown
+AMAZON.HelpIntent
+AMAZON.StopIntent
+MyNameIsIntent myName=
+MyNameIsIntent myName=Madeline
+StateRequestIntent usstate=Texas
+RecapIntent
+AMAZON.StopIntent

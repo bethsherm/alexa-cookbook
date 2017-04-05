@@ -1,5 +1,5 @@
 #### Ingredients
-## Amazon-S3 <a id="title"></a>
+## Amazon-DynamoDB <a id="title"></a>
 
 #### What you will learn
 
