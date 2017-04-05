@@ -103,7 +103,7 @@ fs.readFile(MyDialog, function (err, data) {  // open dialog sequence file and r
 
                 var equalsPosition = tokenArray[j].indexOf('=');
                 slotname = tokenArray[j].substr(0, equalsPosition);
-                slotvalue = decodeURI(tokenArray[j].substr(equalsPosition+1, 300));
+                slotvalue = decodeURI(tokenArray[j].substr(equalsPosition+1, 300)).replace('\r','');
 
                 if (options.slots) {
                     console.log('\x1b[34m%s :\x1b[0m\x1b[32m %s\x1b[0m ', slotname,  slotvalue  );
