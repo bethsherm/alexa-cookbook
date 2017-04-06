@@ -50,7 +50,7 @@ Notice that slot values with spaces need to be encoded.  Just insert ```%20``` t
   + You should see request and Intents, slot values, session attributes, and output speech.
 
 
-<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow1._TTH_.png" alt="TestFlow" width="440" height="288">
+<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow1._TTH_.png" alt="TestFlow" width="346" height="288">
 
 
 #### Customizing the output
