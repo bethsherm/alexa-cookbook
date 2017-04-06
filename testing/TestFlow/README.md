@@ -49,7 +49,7 @@ AMAZON.StopIntent
   + You should see request and Intents, slot values, session attributes, and output speech.
 
 
-<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="411" height="288">
+<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="440" height="288">
 
 
 #### Customizing the output
