@@ -1,4 +1,3 @@
-#### Testing
 ## TestFlow <a id="title"></a>
 
 You can run your skill code through a sequence of test events to see how the conversation session flows.
@@ -28,7 +27,7 @@ Another example: *staterequest.txt*
 ```
 LaunchRequest
 StateRequestIntent usstate=Vermont
-StateRequestIntent usstate=California
+StateRequestIntent usstate=New%20Jersey
 ISeeIntent animal=bear color=brown
 AMAZON.HelpIntent
 AMAZON.StopIntent
@@ -38,6 +37,8 @@ StateRequestIntent usstate=Texas
 RecapIntent
 AMAZON.StopIntent
 ```
+
+Notice that slot values with spaces need to be encoded.  Just add a ```%20``` to any spaces, such as ```usstate=New%20Jersey```
 
 #### Running the test
 

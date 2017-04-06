@@ -36,7 +36,7 @@ If the test works, you should see a formatted JSON response similar to this:
 #### TestFlow
 You can run a sequence of conversation events as a local test and view formatted results in your console window.
 
-Go to [TestFlow](TestFlow/README.md#title)
+Go to [TestFlow](TestFlow)
 
 <img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="411" height="245">
 
