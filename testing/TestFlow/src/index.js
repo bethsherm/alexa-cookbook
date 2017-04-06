@@ -64,6 +64,7 @@ var handlers = {
 
             say = 'You saw a ' + myColor + ' ' + myAnimal;
         }
+asdf
 
         this.emit(':ask', say, 'try again');
 
@@ -79,6 +80,7 @@ var handlers = {
         var stateCount =  this.attributes['myList'].length;
 
         var say = 'Your list has the following ' + stateCount + ' states. ' + stateList;
+
 
         this.emit(':ask', say, 'try again');
     },

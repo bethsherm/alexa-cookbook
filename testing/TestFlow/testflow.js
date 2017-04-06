@@ -9,7 +9,7 @@ const options = {
     speechOutput : true,
     slots        : true,
     attributes   : true,
-    stdout       : false  // standard output  / console.log() in your code
+    stdout       : true  // standard output  / console.log() in your code
 };
 
 var locale = 'en-US';

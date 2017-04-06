@@ -52,6 +52,7 @@ Follow these steps to install the **alexa-sdk**:
 1. Type ```npm install --save alexa-sdk```
 1. You will notice a new folder called ```node_modules``` which contains an ```alexa-sdk``` folder.
 1. You can repeat and use any other Node modules to your project with the npm command.
+  * For example, you could install the open source SSML-Builder module via ```npm install --save ssml-builder```
 
  *Note: You can install the*  **```aws-sdk```**  *locally, however it is already available within Lambda and does not need to be bundled into your deployment.*
 
