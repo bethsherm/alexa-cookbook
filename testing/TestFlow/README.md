@@ -27,7 +27,7 @@ Another example: *staterequest.txt*
 ```
 LaunchRequest
 StateRequestIntent usstate=Vermont
-StateRequestIntent usstate=New%20Jersey
+StateRequestIntent usstate=New%20York
 ISeeIntent animal=bear color=brown
 AMAZON.HelpIntent
 AMAZON.StopIntent
@@ -38,7 +38,7 @@ RecapIntent
 AMAZON.StopIntent
 ```
 
-Notice that slot values with spaces need to be encoded.  Just add a ```%20``` to any spaces, such as ```usstate=New%20Jersey```
+Notice that slot values with spaces need to be encoded.  Just insert ```%20``` to replace any white spaces, such as in ```usstate=New%20York```
 
 #### Running the test
 
@@ -50,7 +50,7 @@ Notice that slot values with spaces need to be encoded.  Just add a ```%20``` to
   + You should see request and Intents, slot values, session attributes, and output speech.
 
 
-<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="440" height="288">
+<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow1._TTH_.png" alt="TestFlow" width="440" height="288">
 
 
 #### Customizing the output

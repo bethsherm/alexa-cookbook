@@ -1,6 +1,6 @@
 LaunchRequest
 StateRequestIntent usstate=Vermont
-StateRequestIntent usstate=New%20Jersey
+StateRequestIntent usstate=New%20York
 ISeeIntent animal=bear color=brown
 AMAZON.HelpIntent
 AMAZON.StopIntent
