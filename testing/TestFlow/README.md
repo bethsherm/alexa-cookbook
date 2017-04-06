@@ -68,8 +68,9 @@ const options = {
 ```
 
 #### Session Attributes
-Notice in magenta (pink) the session attributes that store values your skill is designed to remember.
+Notice in magenta (purple) the session attributes that store values your skill is designed to remember.
 By default, this object is empty ```{}```
+
 Each new request uses the session attributes object from the previous session's output.
 The skill code may add or modify the session attributes.  Look for any changes in the attributes after each Intent.
 If your skill causes the session to end, such as when an ```AMAZON.StopIntent``` handler calls ```this.emit(':tell' )```, the session attributes will be lost.
@@ -79,7 +80,8 @@ If your skill uses an AWS DynamoDB table, however, you can expect the session at
 #### Try it on your code
 1. Copy and paste the ```testflow.js``` file and ```/dialogs``` folder to your project folder, next to your ```/src``` folder.
 1. Customize the settings within the top of the ```testflow.js``` file
-1. Run from the command line.
+1. Create a new dialog sequence file with your Intents in sequence, such as ```mytest.txt```
+1. Run from the command line: ```node testflow mytest.txt```
 
 <hr />
 
