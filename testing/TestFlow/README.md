@@ -3,7 +3,7 @@
 
 You can run your skill code through a sequence of events to see how the conversation session works.
 
-![TestFlow](https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png)
+<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="411" height="245">
 
 **```testflow.js```** is a Javascript script designed to be run from the command line.  The script will access two other files:
  * Your ```src/index.js``` skill source code
@@ -49,7 +49,8 @@ AMAZON.StopIntent
   + You should see request and Intents, slot values, session attributes, and output speech.
 
 
-![TestFlow](https://m.media-amazon.com/images/G/01/cookbook/testflow1._TTH_.png)
+<img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="346" height="288">
+
 
 #### Customizing the output
 At the top of the ```testflow.js``` file, notice a set of options you can define.
