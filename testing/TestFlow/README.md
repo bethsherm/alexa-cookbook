@@ -1,13 +1,13 @@
-## Testing <a id="title"></a>
-### TestFlow
+#### Testing
+## TestFlow <a id="title"></a>
 
-You can run your skill code through a sequence of events to see how the conversation session works.
+You can run your skill code through a sequence of test events to see how the conversation session flows.
 
 <img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="411" height="245">
 
 **```testflow.js```** is a Javascript script designed to be run from the command line.  The script will access two other files:
  * Your ```src/index.js``` skill source code
- * A dialog sequence file, such as  ```/dialogs/staterequest.txt```
+ * A dialog sequence file, such as  ```dialogs/staterequest.txt```
 
 
 #### Dialog Sequence File
@@ -66,8 +66,17 @@ const options = {
 };
 ```
 
+#### Session Attributes
+Notice in magenta (pink) the session attributes that store values your skill is designed to remember.
+By default, this object is empty ```{}```
+Each new request uses the session attributes object from the previous session's output.
+The skill code may add or modify the session attributes.  Look for any changes in the attributes after each Intent.
+If your skill causes the session to end, such as when an ```AMAZON.StopIntent``` handler calls ```this.emit(':tell' )```, the session attributes will be lost.
+If your skill uses an AWS DynamoDB table, however, you can expect the session attributes to be saved and re-loaded after each session ends, within the actual AWS Lambda environment.
+
+
 #### Try it on your code
-1. Copy and paste the testflow.js file and /dialogs folder to your project folder.
+1. Copy and paste the ```testflow.js``` file and ```/dialogs``` folder to your project folder, next to your ```/src``` folder.
 1. Customize the settings within the top of the ```testflow.js``` file
 1. Run from the command line.
 
