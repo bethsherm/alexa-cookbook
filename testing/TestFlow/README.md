@@ -1,6 +1,14 @@
 ## TestFlow <a id="title"></a>
 
-You can run your skill code through a sequence of test events to see how the conversation session flows.
+In the main [testing](../testing) folder, we see several examples of how to test your code with one specific event.
+This is useful if you have a specific test state you need to reproduce and debug.
+
+Many skills are designed to have a conversation with the user involving multiple steps.
+A skill may prompt the user for inputs early in the conversation, store the responses in session attributes, and use the values to look up data or perform an action.
+Game skills will keep track of user names, current scores, high scores, etc.
+As a developer, in order to visualize the state of session attributes throughout a long skill session, it helps to be able to run a pre-defined sequence of events and observe the state of the attributes at each point.
+
+This tutorial will show you an easy way to define, run, and view test sequences against your skill code.
 
 <img src="https://m.media-amazon.com/images/G/01/cookbook/testflow_default._TTH_.png" alt="TestFlow" width="411" height="245">
 
