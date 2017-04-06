@@ -56,7 +56,7 @@ AMAZON.StopIntent
 At the top of the ```testflow.js``` file, notice a set of options you can define.
 You may change any of these to ```true``` or ```false```.
 
-```
+```javascript
 // Toggle on or off various debugging outputs
 const options = {
     speechOutput : true,  // the cyan text you hear the Echo say
