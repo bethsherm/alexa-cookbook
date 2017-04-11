@@ -32,7 +32,7 @@ var handlers = {
 
     'MyIntent': function () {
 
-        httpsGet(myRequest,  myResult => {
+        httpsGet(myRequest,  (myResult) => {
                 console.log("sent     : " + myRequest);
                 console.log("received : " + myResult);
 

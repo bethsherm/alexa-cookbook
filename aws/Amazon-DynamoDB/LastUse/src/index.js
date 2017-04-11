@@ -49,7 +49,24 @@ var handlers = {
 
         var say = 'hello and welcome';
 
-        this.emit(':ask', say, 'try again');
+        var min = this.attributes['minutesSinceLast'];
+        var count = this.attributes['launchCount'];
+
+        var introSay = '';
+
+        if (count == 0) {
+            introSay = 'welcome, brand new user.';
+        } else {
+            if (min < 30) {
+                introSay = 'you again! it has only been ' + min + ' minutes! ';
+            } else {
+                introSay = 'welcome back. you have used this skill ' + count + ' times. ';
+            }
+        }
+
+
+
+        this.emit(':ask', introSay + ' what can I help you with?', 'try again');
     },
     'WhatsUpIntent': function () {
 
