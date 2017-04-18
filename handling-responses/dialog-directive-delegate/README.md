@@ -7,7 +7,7 @@
 ## What You Will Learn
 *  [AWS Lambda](http://aws.amazon.com/lambda)
 *  [Alexa Skills Kit (ASK)](https://developer.amazon.com/alexa-skills-kit)
-* Using the [skill builder (beta)](https://developer.integ.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui) for required slots
+* Using the [skill builder (beta)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui) for required slots
 * The [delegate directive](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/dialog-interface-reference#directives)
 
 ## What You Will Need

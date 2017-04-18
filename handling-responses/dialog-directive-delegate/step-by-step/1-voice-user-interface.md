@@ -3,7 +3,7 @@
 
 ## Setting up Your Voice User Interface
 
-There are two parts to an Alexa skill.  The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface).  This is where we define how we will handle a user's voice input, and which code should be executed when specific commands are uttered.  The second part is the actual code logic for our skill, and we will handle that in [the next step](https://github.com/alexa/skill-sample-node-device-address-api/blob/master/step-by-step/2-lambda-function.md) of this step-by-step guide.
+There are two parts to an Alexa skill.  The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface).  This is where we define how we will handle a user's voice input, and which code should be executed when specific commands are uttered.  The second part is the actual code logic for our skill, and we will handle that in [the next step](https://github.com/alexa/alexa-cookbook/tree/master/handling-responses/dialog-directive-delegate/blob/master/step-by-step/2-lambda-function.md) of this step-by-step guide.
 
 1.  **Go to the [Amazon Developer Portal](http://developer.amazon.com).  In the top right corner of the screen, click the Sign In button.** </br>(If you don't already have an account, you will be able to create a new one for free.)
 
@@ -32,7 +32,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
     *  **Name** This is the name of the skill as it will be displayed in the [Alexa app](http://alexa.amazon.com).
 
-    *  **Invocation Name** This is the name spoken by your users to start the skill. Use a name like "device address" for this sample skill. Some common issues that developers experience with invocation names are listed in the following table. In addition, please review the [Invocation Name Requirements](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill) as you consider an invocation name for your skill.
+    *  **Invocation Name** This is the name spoken by your users to start the skill. Use a name like "plan my trip" for this sample skill. Some common issues that developers experience with invocation names are listed in the following table. In addition, please review the [Invocation Name Requirements](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill) as you consider an invocation name for your skill.
 
         | Invocation Name Requirements | Examples of incorrect invocation names |
         | ---------------------------- | -------------------------------------- |
@@ -106,7 +106,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
     7.7. **Set the slot type for activity to LIST_OF_ACTIVITIES** from the left navigation, choose ```PlanMyTrip``` then from the right panel, ```choose a slot type``` for activity and pick ```LIST_OF_ACTIVITIES```.
 
-    Next we'll add prompts and utterances for each of the required cities. To learn more see the [required slots](https://developer.integ.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui#id-required-slots) section of the documentation.
+    Next we'll add prompts and utterances for each of the required cities. To learn more see the [required slots](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui#id-required-slots) section of the documentation.
 
     7.8. **Add Prompts and Utterances for toCity** In the left navigation choose ```toCity```.
 
@@ -173,7 +173,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
 8. **Build Model** Now you've created a new PlanMyTrip Intent with three required slots, toCity, fromCity, and travelDate as well as an optional activities slot. You've also created the related prompts Alexa will use and the utterances people will respond with. Now it's time to prepare all this information for use in your Alexa skill. click the ```Build Model``` button from the top navigation.
 
-If your interaction model builds successfully, click ```Configuration``` to move on to Configuration.  In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](https://github.com/alexa/skill-sample-node-device-address-api/blob/master/step-by-step/3-connect-vui-to-code.md).
+If your interaction model builds successfully, click ```Configuration``` to move on to Configuration.  In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](https://github.com/alexa/alexa-cookbook/tree/master/handling-responses/dialog-directive-delegate/blob/master/step-by-step/3-connect-vui-to-code.md).
 
 
 <br/><br/>

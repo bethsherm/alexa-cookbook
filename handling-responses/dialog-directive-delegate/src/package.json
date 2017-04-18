@@ -16,8 +16,8 @@
   "dependencies": {
     "alexa-sdk": "^1.0.9"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : ""
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }

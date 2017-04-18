@@ -13,7 +13,7 @@ So far, we have [created a Voice User Interface](https://github.com/alexa/alexa-
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/4-2-test-tab._TTH_.png" />
 
 3.  **Test with a device.** For the skill builder beta, test dialog delegation using a device. For this sample say, "Alexa open Plan a Trip" then respond to the prompts as Alexa asks for toCity, fromCity, and travelDate. Also try some of the utterances we added to enabling over answering to see that in action. [See Dialog Interface Reference](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/dialog-interface-reference).
-4. **See the full documentation for more details** The [Using the skill builder (beta) ](https://developer.integ.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui) walks you through creating intents, slots, and dialogs. The [dialog interface reference](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/dialog-interface-reference) will give you more details on the Delegate directive used in this sample as well as the ElicitSlot, ConfirmSlot, ConfirmIntent directives.
+4. **See the full documentation for more details** The [Using the skill builder (beta) ](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-define-the-vui-with-gui) walks you through creating intents, slots, and dialogs. The [dialog interface reference](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/dialog-interface-reference) will give you more details on the Delegate directive used in this sample as well as the ElicitSlot, ConfirmSlot, ConfirmIntent directives.
 
 
 
