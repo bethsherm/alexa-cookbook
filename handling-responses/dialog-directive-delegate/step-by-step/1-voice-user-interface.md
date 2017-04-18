@@ -1,5 +1,5 @@
 # Delegate Dialog Directive Sample Project
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/4-testing.md)
+[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/4-testing.md)
 
 ## Setting up Your Voice User Interface
 
@@ -65,7 +65,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
       >(F) Return to the rest of the pages on the developer portal to configure, test, and publish your skill.
 
-    7.1. *OPTIONAL:* You can choose to upload a file to fill out your interaction model. To do that for this sample click on the ```</> Code Editor``` tab and drag your JSON file from the [dialog-directive-delegate sample in the Alexa cookbook](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/speech-assets/InteractionModel.json) to the cloud upload icon. Once you're done, click ```Apply Changes```. From this point you can follow along with the rest of step 7 to see how things work or move onto step 8.
+    7.1. *OPTIONAL:* You can choose to upload a file to fill out your interaction model. To do that for this sample click on the ```</> Code Editor``` tab and drag your JSON file from the [dialog-directive-delegate sample in the Alexa cookbook](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/speech-assets/InteractionModel.json) to the cloud upload icon. Once you're done, click ```Apply Changes```. From this point you can follow along with the rest of step 7 to see how things work or move onto step 8.
 
     Here are the steps to build out your interaction model by hand.  
 
@@ -177,6 +177,6 @@ If your interaction model builds successfully, click ```Configuration``` to move
 
 
 <br/><br/>
-[![Next: Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/2-lambda-function.md)
+[![Next: Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/step-by-step/2-lambda-function.md)
 
 <img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
