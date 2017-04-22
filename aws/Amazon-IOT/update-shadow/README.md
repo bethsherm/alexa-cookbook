@@ -15,7 +15,6 @@ The user will say: ```go to London``` and the skill will update the IOT Device S
 
 
 <hr />
- *You can learn more about S3 from the [Getting Started with S3](http://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html) documentation.*
 
 Back to the [Home Page](../../README.md#title)
 

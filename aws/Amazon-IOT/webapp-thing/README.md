@@ -31,16 +31,16 @@ Apply all settings:
  + The page should display with a green status label saying "CONNECTED"
 
 #### Test your skill
-1. Say: Alexa, open mein reisehelfer
-1. Say: reisen nach Frankfurt
-1. Say: ich komme aus Belfast
-1. Say: stopp
+1. Say: Alexa, open city browser
+1. Say: go to Frankfurt
+1. Say: go to Belfast
+1. Say: stop
 
-The browser page should automatically create a new child window page, that points to an Image Search URL for the city you requested!
+The browser page should automatically create a new child window pop-up, that points to an Image Search URL for the city you requested!
 
 #### Debug
  * If there is any issue, open your browser's Debug Console and look for any Javascript errors for clues.
-
+ * Check for any suppressed popup window within your browser's URL bar.
 
 <hr />
 
