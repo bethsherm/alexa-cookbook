@@ -99,7 +99,7 @@ exports.handler = (event, context) => {
 function delegateSlotCollection(){
   console.log("in delegateSlotCollection");
   console.log("current dialogState: "+this.event.request.dialogState);
-    if (this.event.request.dialogState === "BEGINNING") {
+    if (this.event.request.dialogState === "STARTED") {
       console.log("in Beginning");
       var updatedIntent=this.event.request.intent;
       //optionally pre-fill slots: update the intent object with slot values for which

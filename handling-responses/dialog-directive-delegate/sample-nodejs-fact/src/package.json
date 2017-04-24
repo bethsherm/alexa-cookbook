@@ -1,7 +1,7 @@
 {
-  "name": "dialog-directive-delegate",
+  "name": "dialog-directive-delegate-fact-sample",
   "version": "1.0.0",
-  "description": "Delegate Dialog Directive Sample Project",
+  "description": "Delegate Dialog Directive Sample Fact Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,8 +16,8 @@
   "dependencies": {
     "alexa-sdk": "^1.0.9"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
+  "repository" : {
+    "type" : "git",
+    "url" : ""
   }
 }

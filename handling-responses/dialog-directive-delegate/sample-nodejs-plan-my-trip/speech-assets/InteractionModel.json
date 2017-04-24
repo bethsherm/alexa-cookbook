@@ -20,7 +20,8 @@
         "I want to travel from {fromCity} to {toCity} {travelDate} ",
         "{toCity} ",
         "Plan a trip",
-        "I'll go to {toCity} on the {travelDate} "
+        "I'll go to {toCity} on the {travelDate} ",
+        "this is a {newSlot}"
       ],
       "slots": [
         {
