@@ -46,25 +46,24 @@ This guide will show you how you can enter and maintain your Fact list via on on
 1. Click the AWS Lambda ARN radio button.
 1. Click the geographic region closest to you, such as "North America"
 1. Paste in the following ARN ```arn:aws:lambda:us-east-1:589662381973:function:FactService```
- * Optional: Install and use your own version of this function via the [src/index.js](src/index.js) Lambda code.
+  * Optional: Install and use your own version of this function via the [src/index.js](src/index.js) Lambda code.
 1. Click Next to advance to the Test page.
 
 
 #### Fact Service Console
 A demo Fact service has been setup that you may use to manage your fact list.
 
- * [https://s3.amazonaws.com/fact-service/factlist.html]
-
 1. Locate your skill's Application Id that appears on the Skill Information page.
-1. Paste in this value to the top textbox of the [factlist.html](https://s3.amazonaws.com/fact-service/factlist.html)
+1. Paste in this value to the top textbox of the Fact console: [https://s3.amazonaws.com/fact-service/factlist.html](https://s3.amazonaws.com/fact-service/factlist.html)
 1. Type in several facts into the the Fact List textbox on this page.
 1. Click Save.
 
 #### Testing
 
 1. Within the test page of your skill, Service Simulator box, type in "tell me a fact".
- * You may also test using [EchoSim.io](https://echosim.io) or on any Alexa device.
-1. You should hear one of the facts from your list.
+  * You may also test using [EchoSim.io](https://echosim.io) or on any Alexa device.
+1. You should hear one of the facts from your list!
+1. Modify the facts in your list from the web console, and test again.
 
 
 <hr />
