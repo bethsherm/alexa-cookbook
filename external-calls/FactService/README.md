@@ -53,8 +53,9 @@ This guide will show you how you can enter and maintain your Fact list via on on
 #### Fact Service Console
 A demo Fact service has been setup that you may use to manage your fact list.
 
-1. Locate your skill's Application Id that appears on the Skill Information page.
-1. Paste in this value to the top textbox of the Fact console: [https://s3.amazonaws.com/fact-service/factlist.html](https://s3.amazonaws.com/fact-service/factlist.html)
+1. Locate your skill's Application Id that appears on the Skill Information page and Copy this value.
+1. In a new browser tab, navigate to [https://s3.amazonaws.com/fact-service/factlist.html](https://s3.amazonaws.com/fact-service/factlist.html)
+1. Paste in your Application Id to the first textbox and press the Load button.
 1. Type in several facts into the the Fact List textbox on this page.
 1. Click Save.
 
