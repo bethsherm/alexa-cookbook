@@ -1,9 +1,9 @@
 # Alexa Lists Integration Sample Project
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/4-testing.md)
+[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/4-testing.md)
 
 ## Setting up Your Voice User Interface
 
-There are two parts to an Alexa skill.  The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface).  This is where we define how we will handle a user's voice input, and which code should be executed when specific commands are uttered.  The second part is the actual code logic for our skill, and we will handle that in [the next step](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md) of this step-by-step guide.
+There are two parts to an Alexa skill.  The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface).  This is where we define how we will handle a user's voice input, and which code should be executed when specific commands are uttered.  The second part is the actual code logic for our skill, and we will handle that in [the next step](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md) of this step-by-step guide.
 
 1.  **Go to the [Amazon Developer Portal](http://developer.amazon.com).  In the top right corner of the screen, click the Sign In button.** </br>(If you don't already have an account, you will be able to create a new one for free.)
 
@@ -67,7 +67,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
         ]
     }
     ```
-    ([get this on GitHub](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/speechAssets/IntentSchema.json))
+    ([get this on GitHub](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/speechAssets/IntentSchema.json))
 
     7.2.  **Custom Slot Types** For this sample skill, you do not need any custom slots. If you're interested... Custom slots are sets of training data for Alexa to give her an idea of the types of data you expect to receive from your skill users. Note that the values in a custom slot *do not* function like a drop-down list on a website.  If your custom slot contains a list of colors in the rainbow, and your user responds with a color that isn't in your list, you will still receive "sky blue" as an answer, and your skill must be able to handle those situations.
 
@@ -79,11 +79,11 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
     ClearTopToDoIntent clear top to do
     ClearTopToDoIntent delete top todo
     ```
-    ([get this on GitHub](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/speechAssets/SampleUtterances.txt))
+    ([get this on GitHub](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/speechAssets/SampleUtterances.txt))
 
     When you have added these sample utterances to your skill, click **Save** to verify that your interaction model builds properly without any errors.
 
-8.  If your interaction model builds successfully, click **Next** to move on to Configuration.  In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/3-connect-vui-to-code.md).
+8.  If your interaction model builds successfully, click **Next** to move on to Configuration.  In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/3-connect-vui-to-code.md).
 
     If you get an error from your interaction model, check through this list:
 
@@ -91,6 +91,6 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
     *  **Did you accidentally add any unwanted characters to the Interaction Model or Sample Utterances?**
 
 <br/><br/>
-[![Next: Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/AlexaStaging/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md)
+[![Next: Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/Alexa/alexa-cookbook/blob/master/context/lists/step-by-step/2-lambda-function.md)
 
 <img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
