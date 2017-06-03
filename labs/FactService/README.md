@@ -15,7 +15,7 @@
 
 #### Code
 1. Login to AWS and verify the region at the top right is set to the **Ireland** or **N. Virginia** Region region.
-1. Click [Lambda](https://console.aws.amazon.com/lambda/home) and then **Create a Lambda function**  Do not select the default **Blank** blueprint.
+1. Click [Lambda](https://console.aws.amazon.com/lambda/home) and then **Create a Lambda function**  Do **NOT** select the default **Blank** blueprint.
 1. Locate and click on the ```alexa-skill-kit-sdk-factskill``` skill template (hint: search for **fact** )
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
 1. Give your function the name *FactService*
@@ -46,7 +46,7 @@
 
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
 1. Click Next and create the function.
-1. Make note of the Lambda ARN, shown near the top right, such as
+1. Make note of the Lambda ARN, shown near the top right, such as this example:
  *  ``` arn:aws:lambda:us-east-1:333304287777:function:FactService ```
 
 
