@@ -23,7 +23,18 @@ Open a command prompt and navigate to this folder (labs/LocalGuide).  Type in ``
 You should see a sequence of skill events be tested and the corresponding output.
 This will look best with a black-background command prompt.
 
-#### Extend
+#### Lab 1: Extend this skill
+When the user says "go outside", the ```GoOutIntent``` intent is called.
+This makes an API call over the Internet to an API that returns the weather and current time in your city.
+
+You can add your own custom features to this skill.
+For example, add a feature to decide, based on current time and weather conditions, whether to:
+
+ * Go out to a local beach or park
+ * Recommend a movie theatre or mall
+ * Attend a scheduled public event happening soon
+ * Staying home to watch a movie on Amazon Prime
+ * etc..
 
 
 <hr />
