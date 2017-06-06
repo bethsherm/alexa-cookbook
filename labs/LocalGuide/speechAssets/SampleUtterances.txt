@@ -1,0 +1,11 @@
+AboutIntent about
+AboutIntent tell me about this place
+
+CoffeeIntent coffee
+BreakfastIntent breakfast
+LunchIntent lunch
+DinnerIntent dinner
+
+GoOutIntent go out
+GoOutIntent go outside
+GoOutIntent lets go out
