@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "name": "AboutIntent",
+      "samples": [
+        "about",
+        "tell me about this place"
+      ],
+      "slots": []
+    },
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NoIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.YesIntent",
+      "samples": []
+    },
+    {
+      "name": "BreakfastIntent",
+      "samples": [
+        "breakfast"
+      ],
+      "slots": []
+    },
+    {
+      "name": "CoffeeIntent",
+      "samples": [
+        "coffee"
+      ],
+      "slots": []
+    },
+    {
+      "name": "DinnerIntent",
+      "samples": [
+        "dinner"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GoOutIntent",
+      "samples": [
+        "go out",
+        "go outside",
+        "lets go out"
+      ],
+      "slots": []
+    },
+    {
+      "name": "LunchIntent",
+      "samples": [
+        "lunch"
+      ],
+      "slots": []
+    }
+  ]
+}
