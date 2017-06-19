@@ -139,8 +139,5 @@ function updateShadow(desiredState, callback) {
 
     });
 
-
-
-
 }
 

@@ -1,17 +1,20 @@
-// Test Flow - a multiple intent test script for Alexa Lambda code
-// Launch from a Terminal Prompt.  Examples:
+// testflow - a multiple intent test script for Alexa Lambda code
+// testflow reads your Intent sequence from a dialog sequence file, saved to the /dialogs folder
+// Launch testflow from a Terminal Prompt.  Examples:
+//
 // node testflow
-// node testflow staterequest.txt
-
+// node testflow mydialog.txt
 
 // Toggle on or off various debugging outputs
 const options = {
-    speechOutput : true,
-    slots        : true,
-    attributes   : true,    // true, false, or a string with the name of an attribute
+
+    delay        : 0.5,     // seconds between requests
     stdout       : true,    // standard output  / console.log() in your code
-    delay        : 1.0      // seconds between requests
+    attributes   : false,   // true, false, or a string with the name of an attribute
+    speechOutput : true,
+    slots        : true
 };
+
 var appId = 'amzn1.echo-sdk-ams.app.1234';  // set this to match your skill's alexa.appId to remove warnings
 var locale = 'en-US';
 
@@ -26,7 +29,7 @@ if (process.argv[2]) {
 
 console.log();
 console.log('================================================================================');
-console.log('Running TestFlow with Skill sequence dialog file : ', MyDialog);
+console.log('Running test sequence from dialog file : ', MyDialog);
 console.log();
 
 const OriginalConsoleLog = console.log;
@@ -121,6 +124,10 @@ fs.readFile(MyDialog, function (err, data) {  // open dialog sequence file and r
 
 function runSingleTest(myLineArray, currentLine, sa) {
 
+    console.log('--------------------------------------------------------------------------------');
+    // console.log('testing line ', currentLine);
+    // console.log('testing line values ', myLineArray[currentLine]);
+
     prompt = false;
     var newSession = true;
     if (currentLine > 0) {
@@ -169,6 +176,7 @@ function runSingleTest(myLineArray, currentLine, sa) {
 
         });
 
+
     }
 
 }
@@ -185,9 +193,10 @@ function processArray(arr, cb) {
 
         promptForSlot(prompt, slotname, slotvalue, (newValue) => {
 
-            var answer = newValue.toString().trim();
+            // console.log('slotname, slotvalue, newValue');
+            // console.log(slotname, slotvalue, newValue);
 
-            // console.log('answer = ' + answer);
+            var answer = newValue.toString().trim();
 
             if(answer == '') {
                 answer = slotvalue;
