@@ -19,7 +19,9 @@ You can publish a guide to various restaurants and attractions to let people kno
 Find and change the name of the city and the local restaurant details within the code in index.js
 
 #### Test
-Open a command prompt and navigate to this folder (labs/LocalGuide).  Type in ```node testflow```
+1. Be sure you have installed Node.JS on your laptop.
+1. With the alexa-cookbook previously downloaded to a folder your laptop, open a command prompt and navigate to the cookbook folder (labs/LocalGuide/src).  Type in ```npm install```
+1. Next, navigate back up to the (labs/LocalGuide) folder.  Type in ```node testflow```
 You should see a sequence of skill events be tested and the corresponding output.
 This will look best with a black-background command prompt.
 
