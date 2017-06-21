@@ -9,7 +9,10 @@ Local Guide is a skill that gives you suggestions on where to visit and dine in 
 
 #### Installation
 Install this skill to learn more about Gloucester, Massachusetts.
-Practice a few times to learn all the features of the skill.
+1. Copy and paste the ```speechAssets/InteractionModel.json``` contents into a new skill in Skill Builder Beta.
+1. Copy the ```src/index.js``` code into a new AWS Lambda function that is based on the **Fact** blueprint.
+
+Practice speaking to the skill a few times to learn all the features of the skill.
 When you ask for a meal such as breakfast, the skill will scan the list of restaurants serving breakfast and choose one at random.
 
 #### Customize
