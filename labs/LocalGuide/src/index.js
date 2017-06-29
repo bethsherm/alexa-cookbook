@@ -6,7 +6,7 @@ var languageStrings = {
     'en': {
         'translation': {
             'WELCOME' : "Welcome to Gloucester Guide!",
-            'HELP'    : "Say about, to hear more about the city, or say coffee, breakfast, lunch, or dinner, to hear local restaurant suggestions, or say, go outside. ",
+            'HELP'    : "Say about, to hear more about the city, or say coffee, breakfast, lunch, or dinner, to hear local restaurant suggestions, or say recommend an attraction, or say, go outside. ",
             'ABOUT'   : "Gloucester Massachusetts is a city on the Atlantic Ocean.  A popular summer beach destination, Gloucester has a rich history of fishing and ship building.",
             'STOP'    : "Okay, see you next time!"
         }
@@ -50,6 +50,28 @@ var data = {
         },
 
     ],
+    "attractions":[
+        {
+            "name": "Whale Watching",
+            "description": "Gloucester has tour boats that depart twice daily from Rogers street at the harbor.  Try either the 7 Seas Whale Watch, or Captain Bill and Sons Whale Watch. ",
+            "distance": "0"
+        },
+        {
+            "name": "Good Harbor Beach",
+            "description": "Facing the Atlantic Ocean, Good Harbor Beach has huge expanses of soft white sand that attracts hundreds of visitors every day during the summer.",
+            "distance": "2"
+        },
+        {
+            "name": "Rockport",
+            "description": "A quaint New England town, Rockport is famous for rocky beaches, seaside parks, lobster fishing boats, and several art studios.",
+            "distance": "4"
+        },
+        {
+            "name": "Fenway Park",
+            "description": "Home of the Boston Red Sox, Fenway park hosts baseball games From April until October, and is open for tours. ",
+            "distance": "38"
+        }
+    ]
 }
 
 // Weather courtesy of the Yahoo Weather API.
@@ -80,9 +102,11 @@ var handlers = {
         var say = this.t('WELCOME') + ' ' + this.t('HELP');
         this.emit(':ask', say, say);
     },
+
     'AboutIntent': function () {
-        this.emit(':ask', this.t('ABOUT'));
+        this.emit(':tell', this.t('ABOUT'));
     },
+
     'CoffeeIntent': function () {
         var restaurant = randomArrayElement(getRestaurantsByMeal('coffee'));
         this.attributes['restaurant'] = restaurant.name;
@@ -90,6 +114,7 @@ var handlers = {
         var say = 'For a great coffee shop, I recommend, ' + restaurant.name + '. Would you like to hear more?';
         this.emit(':ask', say);
     },
+
     'BreakfastIntent': function () {
         var restaurant = randomArrayElement(getRestaurantsByMeal('breakfast'));
         this.attributes['restaurant'] = restaurant.name;
@@ -97,6 +122,7 @@ var handlers = {
         var say = 'For breakfast, try this, ' + restaurant.name + '. Would you like to hear more?';
         this.emit(':ask', say);
     },
+
     'LunchIntent': function () {
         var restaurant = randomArrayElement(getRestaurantsByMeal('lunch'));
         this.attributes['restaurant'] = restaurant.name;
@@ -104,6 +130,7 @@ var handlers = {
         var say = 'Lunch time! Here is a good spot. ' + restaurant.name + '. Would you like to hear more?';
         this.emit(':ask', say);
     },
+
     'DinnerIntent': function () {
         var restaurant = randomArrayElement(getRestaurantsByMeal('dinner'));
         this.attributes['restaurant'] = restaurant.name;
@@ -111,7 +138,7 @@ var handlers = {
         var say = 'Enjoy dinner at, ' + restaurant.name + '. Would you like to hear more?';
         this.emit(':ask', say);
     },
-    
+
     'AMAZON.YesIntent': function () {
         var restaurantName = this.attributes['restaurant'];
         var restaurantDetails = getRestaurantByName(restaurantName);
@@ -127,7 +154,23 @@ var handlers = {
             + '\nphone: ' + restaurantDetails.phone + '\n';
 
         this.emit(':tellWithCard', say, restaurantDetails.name, card);
-        
+
+    },
+
+    'AttractionIntent': function () {
+        var distance = 200;
+        if (this.event.request.intent.slots.distance.value) {
+            distance = this.event.request.intent.slots.distance.value;
+        }
+
+        var attraction = randomArrayElement(getAttractionsByDistance(distance));
+
+        var say = 'Try '
+            + attraction.name + ', which is '
+            + (attraction.distance == "0" ? 'right downtown. ' : attraction.distance + ' miles away. Have fun!')
+            + attraction.description;
+
+        this.emit(':tell', say);
     },
 
     'GoOutIntent': function () {
@@ -195,6 +238,20 @@ function getRestaurantByName(restaurantName) {
     }
     return restaurant;
 }
+
+function getAttractionsByDistance(maxDistance) {
+
+    var list = [];
+
+    for (var i = 0; i < data.attractions.length; i++) {
+
+        if(parseInt(data.attractions[i].distance) <= maxDistance) {
+            list.push(data.attractions[i]);
+        }
+    }
+    return list;
+}
+
 function getWeather(callback) {
     var https = require('https');
 

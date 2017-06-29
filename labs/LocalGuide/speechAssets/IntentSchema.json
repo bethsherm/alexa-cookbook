@@ -17,6 +17,12 @@
       "intent": "DinnerIntent",  "slots":[]
     },
     {
+      "intent": "AttractionIntent",
+      "slots":[
+        { "name":"distance", "type":"AMAZON.NUMBER" }
+      ]
+    },
+    {
       "intent": "GoOutIntent",  "slots":[]
     },
     {
