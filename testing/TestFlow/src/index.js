@@ -64,7 +64,6 @@ var handlers = {
 
             say = 'You saw a ' + myColor + ' ' + myAnimal;
         }
-asdf
 
         this.emit(':ask', say, 'try again');
 
