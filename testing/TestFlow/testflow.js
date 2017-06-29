@@ -3,14 +3,15 @@
 // node testflow
 // node testflow staterequest.txt
 
-
 // Toggle on or off various debugging outputs
 const options = {
     speechOutput : true,
     slots        : true,
-    attributes   : false, // true, false, or a string with the name of an attribute
-    stdout       : true,    // standard output  / console.log() in your code
-    delay        : 0.8     // seconds between requests
+    attributes   : true, // true, false, or a string with the name of an attribute
+    stdout       : false,    // standard output  / console.log() in your code
+    requestEvent : false,    // show the full request JSON sent to your code
+    reprompt     : false,
+    delay        : 1.0    // seconds between requests
 };
 
 var locale = 'en-US';
@@ -19,6 +20,7 @@ var fs = require("fs");
 var MyLambdaFunction = require('./src/index.js'); // Your Lambda source with exports.handler
 
 var MyDialog = './dialogs/default.txt';
+var appId = ''; // 'amzn1.ask.skill.d60ceb98-befe-4f49-a627-1f20f6e98d94';
 
 if (process.argv[2]) {
     MyDialog = './dialogs/' + process.argv[2];
@@ -80,6 +82,26 @@ var context = {
             console.log('\x1b[36m%s\x1b[0m ', textToSay);
         }
 
+        if (data.response.reprompt && data.response.reprompt.outputSpeech && data.response.reprompt.outputSpeech.ssml) {
+
+            var textReprompt = data.response.reprompt.outputSpeech.ssml;
+            textReprompt = textReprompt.replace('<speak>', '    ');
+            textReprompt = textReprompt.replace('</speak>', '');
+
+            if (options.reprompt) {
+                console.log = OriginalConsoleLog;
+
+                // console.log('%s \x1b[33m\x1b[1m%s\x1b[0m \x1b[2m%s\x1b[0m', currentLine+1, Intent, sdkState);
+
+                console.log('\x1b[36m \x1b[2m%s\x1b[0m ', textReprompt);
+            }
+        }
+
+
+        if (data.response.shouldEndSession) {
+            // console.log('================ Session Ended');
+        }
+
 
         // =====================
 
@@ -94,10 +116,11 @@ var context = {
             runSingleTest(lineArray, current_line++, sa);
 
         } else {
+            console.log('');
+
             process.exit();
 
         }
-
 
     },
     'fail': function (err) {
@@ -142,6 +165,11 @@ function runSingleTest(myLineArray, currentLine, sa) {
     var requestType = tokenArray[0].replace('\r','');
     tokenArray.shift();
 
+    if (requestType == 'stop') {
+        console.log('');
+        process.exit();
+    }
+
     if (requestType =='LaunchRequest') {
         request =  {
             "type": requestType,
@@ -164,53 +192,17 @@ function runSingleTest(myLineArray, currentLine, sa) {
             sdkState = sa['STATE'];
         }
 
-        // console.log(' ========== %s. Intent  \x1b[33m\x1b[1m%s\x1b[0m', currentLine+1, Intent);
         console.log('%s \x1b[33m\x1b[1m%s\x1b[0m \x1b[2m%s\x1b[0m', currentLine+1, Intent, sdkState);
 
-
-            // for(j = 0; j < tokenArray.length; j++) {
-            //
-            //     var equalsPosition = tokenArray[j].indexOf('=');
-            //     slotname = tokenArray[j].substr(0, equalsPosition);
-            //     slotvalue = decodeURI(tokenArray[j].substr(equalsPosition+1, 300)).replace('\r','');
-            //
-            //     if (options.slots) {
-            //         console.log('\x1b[34m%s :\x1b[0m\x1b[32m %s\x1b[0m ', slotname,  slotvalue  );
-            //     }
-            //
-            //     if (slotvalue != '') {
-            //         slotArray.push('"' + slotname + '": {"name":"' + slotname + '","value":"' + slotvalue + '"}');
-            //
-            //     }
-            //
-            // }
         processArray(tokenArray, function(request) {
             prepareTestRequest(sa, newSession, request);
 
         });
 
-        // blocking pause
-        // var waitTill = new Date(new Date().getTime() + options.delay * 1000);
-        // while(waitTill > new Date()){}
-
-        // request =  {
-        //     "type": "IntentRequest",
-        //     "intent": {
-        //         "name": Intent,
-        //         "slots" : slotObj
-        //     },
-        //     "locale": locale
-        // };
-
-        // prepareTestRequest(sa, newSession, request);
 
     }
 
 
-    // if (currentLine < myLineArray.length - 1) {
-    //     console.log();
-    //     runSingleTest(myLineArray, currentLine + 1, sa);
-    // }
 }
 
 slotArray = [];
@@ -278,7 +270,7 @@ function prepareTestRequest(sa, newSession, request){
             "session": {
                 "sessionId": "SessionId.f9e6dcbb-b7da-4b47-905c.etc.etc",
                 "application": {
-                    "applicationId": "amzn1.echo-sdk-ams.app.1234"
+                    "applicationId": appId
                 },
                 "attributes": sa,
                 "user": {
@@ -290,6 +282,10 @@ function prepareTestRequest(sa, newSession, request){
             "version": "1.0"
         };
 
+    if (options.requestEvent) {
+        console.log(JSON.stringify(request, null, 2));
+    }
+
     // blocking pause
     var waitTill = new Date(new Date().getTime() + options.delay * 1000);
     while(waitTill > new Date()){}
@@ -299,8 +295,10 @@ function prepareTestRequest(sa, newSession, request){
         MyLambdaFunction['handler'] (eventJSON, context, callback);
 
     }  else {
-
+        //console.log('setting log to {}');
         console.log = function() {};
+        //console.log('set log to {}');
+
         MyLambdaFunction['handler'] (eventJSON, context, callback);
         console.log = OriginalConsoleLog;
     }
