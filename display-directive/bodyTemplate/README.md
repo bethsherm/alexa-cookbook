@@ -17,10 +17,11 @@ This sample modifies the node.js Fact skill sample to:
  * Open your Lambda Function, select all the code, delete, and paste in the contents of [index.js](index.js) and save.
 
 ### Test Your Skill
-  - your Echo Show
-  - the Simulator on the bottom of the Test page of your skill in developer.amazon.com
-  - the AWS Lambda console using the sample unit test requests found in the [test_events] folder
+  You can test your skill using:
 
+  - Your Echo Show
+  - The new Simulator panel on the very bottom of the Test page of your skill in developer.amazon.com
+  - The AWS Lambda console using the sample unit test requests found in the [test_events] folder
 
 **Highlighted changes**
 
