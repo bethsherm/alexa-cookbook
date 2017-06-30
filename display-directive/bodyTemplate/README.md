@@ -21,7 +21,7 @@ This sample modifies the node.js Fact skill sample to:
 
   - Your Echo Show
   - The new Simulator panel on the very bottom of the Test page of your skill in developer.amazon.com
-  - The AWS Lambda console using the sample unit test requests found in the [test_events] folder
+  - The AWS Lambda console using the sample unit test requests found in the [test_events](test_events) folder
 
 **Highlighted changes**
 
