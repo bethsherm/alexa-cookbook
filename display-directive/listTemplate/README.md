@@ -8,7 +8,7 @@ This sample modifies the node.js Fact skill sample to:
 - This skill uses state management (ex: START, QUIZ, and not set). So, for example, the AnswerIntent does one thing in the START state (tells you about a state) and another thing in the QUIZ state (progresses you through the quiz). If you're not aware of this, following the flow of the code can be confusing. You can read more on [State in the SDK documentation](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs#making-skill-state-management-simpler)
 
 ## Install Steps
-### Create a Fact Skill
+### Create a Quiz Game Skill
 
  * Build a quiz game skill using [this tutorial](https://github.com/alexa/skill-sample-nodejs-quiz-game)
  * Be sure to run ```npm install``` to get the lastest node SDK. You need version 1.0.11
@@ -17,7 +17,7 @@ This sample modifies the node.js Fact skill sample to:
 
 ### Replace your Lambda function code with the provided ```index.js```
 
- * Download the deployment package from your Lambda Function, (Actions > Export Function > Download Deployment Package) replace [index.js](index.js) 
+ * Download the deployment package from your Lambda Function, (Actions > Export Function > Download Deployment Package) replace [index.js](index.js)
  * One time, run ```npm install``` to get the lastest node SDK. You need version 1.0.11
  * Compress and upload your package to Lambda. NOTE: compress the index file and the node_modules folder. DO NOT include their parent folder. Index must be at the root of your compressed file.
 
