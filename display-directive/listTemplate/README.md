@@ -31,6 +31,7 @@ This sample modifies the node.js Fact skill sample to:
 
 **Highlighted changes**
 
+
 - ```supportsDisplay()``` returns true if the device supports the Display directive
 - ```isSimulator()``` returns true if the request is from the simulator
 - ```renderTemplate()``` creates the display template. Inside this function, create the templates you want for your scenario. Then, call this function with which of your templates you want to use and the content that will populate that template.
