@@ -167,7 +167,7 @@ var handlers = {
 
         var say = 'Try '
             + attraction.name + ', which is '
-            + (attraction.distance == "0" ? 'right downtown. ' : attraction.distance + ' miles away. Have fun!')
+            + (attraction.distance == "0" ? 'right downtown. ' : attraction.distance + ' miles away. Have fun! ')
             + attraction.description;
 
         this.emit(':tell', say);
