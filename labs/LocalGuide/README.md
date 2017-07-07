@@ -38,20 +38,7 @@ Click **Save** to save the changes to your Lambda function.
 If it works well, please [publish your skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/publishing-an-alexa-skill)  for the world to enjoy.
 
 
-### Lab 2: Extend this skill
-When the user says "go outside", the ```GoOutIntent``` intent is called and the code in the GoOutIntent handler block is executed.
-This makes an API call over the Internet to a service that returns the weather and current time in your city.
-
-You can enhance this handler code to make a relevant activity suggestion to the user.
-For example, add a feature to decide, based on current time and weather conditions, whether to:
-
- * Go out to a local beach or park
- * Recommend a movie theatre or mall
- * Attend a scheduled public event happening soon
- * Staying home to watch a movie on Amazon Prime
- * etc..
-
-### Lab 3: Add a new Intent with Slot
+### Lab 2: Add a new Intent with Slot
 Review the Intent called AttractionIntent.  It has a slot called "distance" which is defined as type ```AMAZON.NUMBER```
 
 The sample utterance looks like this:
@@ -81,6 +68,20 @@ Once this list has been created, you could define a new slot called "bird" that 
 **Within your Lambda code, copy the format of the ```AttractionIntent``` function definition to create a new handler with the same name as your new Intent.**
 
 **Customize the logic in your handler to retrieve the slot value, and add logic to say a response back to the user.**
+
+
+### Lab 3: Extend the skill logic with smart recommendations
+When the user says "go outside", the ```GoOutIntent``` intent is called and the code in the GoOutIntent handler block is executed.
+This makes an API call over the Internet to a service that returns the weather and current time in your city.
+
+You can enhance this handler code to make a relevant activity suggestion to the user.
+For example, add a feature to decide, based on current time and weather conditions, whether to:
+
+ * Go out to a local beach or park
+ * Recommend a movie theatre or mall
+ * Attend a scheduled public event happening soon
+ * Staying home to watch a movie on Amazon Prime
+ * etc..
 
 ### Practice and Demo
 Practice all the features of your skill.  You can use [EchoSim.IO](https://echosim.io), the Amazon shopping app on your phone, or an Echo device.
