@@ -8,17 +8,13 @@ You can install the skill, and then update the Javascript code to make the skill
 
 ### Installation
 Install this skill to learn more about a particular city: Gloucester, Massachusetts.
+The instructor will walk you through the high level steps:
 1. Copy and paste the ```speechAssets/InteractionModel.json``` contents into a new skill in Skill Builder Beta.
 1. Copy the ```src/index.js``` code into a new AWS Lambda function that is based on the **Fact** blueprint.
 
 Practice speaking to the skill a few times to learn all the features of the skill.
-When you ask for a meal such as breakfast, the skill will scan the list of restaurants serving breakfast and choose one at random.
+When you ask for a meal such as "breakfast", the skill will scan the list of restaurants serving breakfast and choose one at random.  When you say "go outside" you should hear the current weather conditions.
 
-### Customize
-Think of your hometown or favorite city.
-You can publish a guide to various restaurants and attractions to let people know the best spots.
-
-Find and change the name of the city and the local restaurant details within the code in index.js
 
 ### Test
 1. Be sure you have installed Node.JS on your laptop.
@@ -28,6 +24,8 @@ You should see a sequence of skill events be tested and the corresponding output
 This will look best with a black-background command prompt.
 
 ### Lab 1: Customize this skill for your city or town
+Think of your hometown, current city, or favorite city.  Jot down a list of your favorite restaurants and attractions.
+
 Open your Lambda function and click on the Code tab.  Review the first section of the code that is customized for Gloucester.
 There are static data blocks called ```languageStrings```, and a ```data {}``` object containing details and lists.
 Carefully modify these green strings within the quotes to define the city, state, zip, restaurants, and attractions custom to your particular town.
