@@ -40,7 +40,7 @@ If it works well, please [publish your skill](https://developer.amazon.com/publi
 
 ### Lab 2: Extend this skill
 When the user says "go outside", the ```GoOutIntent``` intent is called and the code in the GoOutIntent handler block is executed.
-This makes an API call over the Internet to an API that returns the weather and current time in your city.
+This makes an API call over the Internet to a service that returns the weather and current time in your city.
 
 You can enhance this handler code to make a relevant activity suggestion to the user.
 For example, add a feature to decide, based on current time and weather conditions, whether to:
@@ -82,7 +82,7 @@ Once this list has been created, you could define a new slot called "bird" that 
 
 **Customize the logic in your handler to retrieve the slot value, and add logic to say a response back to the user.**
 
-#### Practice and Demo
+### Practice and Demo
 Practice all the features of your skill.  You can use [EchoSim.IO](https://echosim.io), the Amazon shopping app on your phone, or an Echo device.
 
 Be ready to demo the skill to your fellow event attendees, friends, and family.  Ask them to try the skill and observe how they say their requests.
