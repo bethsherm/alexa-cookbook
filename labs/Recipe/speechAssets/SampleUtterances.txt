@@ -1,0 +1,5 @@
+IngredientsIntent ingredients
+
+CookIntent cook
+CookIntent begin
+CookIntent begin cooking
