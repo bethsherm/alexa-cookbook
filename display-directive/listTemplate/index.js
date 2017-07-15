@@ -221,7 +221,7 @@ var startHandlers = Alexa.CreateStateHandler(states.START,{
        console.log("Answer Intent event: "+JSON.stringify(this.event));
         var item = getItem(this.event.request.intent.slots);
 
-        if (item[Object.getOwnPropertyNames(data[0])[0]] !== undefined) {
+        if (item && item[Object.getOwnPropertyNames(data[0])[0]] !== undefined) {
             if (supportsDisplay.call(this)||isSimulator.call(this)) {
               //this device supports a display
 
