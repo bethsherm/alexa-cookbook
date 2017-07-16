@@ -27,7 +27,4 @@ On [step #1](https://github.com/Alexa/alexa-cookbook/blob/master/tools/VUI-Testi
     **Leave "Account Linking" set to "No."** For this skill, we won't be using Account Linking, but you can learn more about [Linking an Alexa User with a User in Your System.](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system)
 
     **Leave Permissions for the Device Address unchecked** This sample does not need to ask customers for permission to get the [Device address](https://github.com/alexa/skill-sample-node-device-address-api/blob/master/README.md)
-
-
-<br/><br/>
-<a href="https://github.com/https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/4-testing.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png" /></a>
+[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/3-connect-vui-to-code.md)

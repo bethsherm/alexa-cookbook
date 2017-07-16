@@ -11,4 +11,4 @@ Since the purpose of this tool is to let you test any VUI, there are no special 
 *OPTIONAL:*
 Build the [Plan My Trip](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/README.md) VUI and use it to test.  
 
-[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/2-lambda-function.md)
+[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/2-lambda-function.md)

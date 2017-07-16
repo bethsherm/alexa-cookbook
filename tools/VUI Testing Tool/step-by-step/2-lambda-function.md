@@ -58,5 +58,4 @@ For this step, we will be creating an AWS Lambda function using [Amazon Web Serv
 12. **After you create the function, the ARN value appears in the top right corner.** Copy this value for use in the next section of the guide.
 You want everything after the "-"```arn:aws:lambda:us-east:xxxxxxxxxxxx:function:YourFunctionName```
 
-[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/3-connect-vui-to-code.md)
-<a href="https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/step-by-step/3-connect-vui-to-code.md><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
+[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/3-connect-vui-to-code.md)
