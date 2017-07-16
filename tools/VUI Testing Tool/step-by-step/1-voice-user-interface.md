@@ -1,5 +1,5 @@
 # VUI Testing Tool
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/4-testing.md)
+[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI%20Testing%20Tool/step-by-step/4-testing.md)
 
 
 ## Setting up Your Voice User Interface
@@ -11,6 +11,4 @@ Since the purpose of this tool is to let you test any VUI, there are no special 
 *OPTIONAL:*
 Build the [Plan My Trip](https://github.com/alexa/alexa-cookbook/blob/master/handling-responses/dialog-directive-delegate/README.md) VUI and use it to test.  
 
-<br/><br/>
-
-<a href="https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/2-lambda-function.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png"/></a>
+[![Next step button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](https://github.com/alexa/alexa-cookbook/blob/master/tools/VUI-Testing/step-by-step/2-lambda-function.md)
