@@ -19,17 +19,16 @@ The instructor will walk you through the high level steps:
 
 Practice speaking to the skill a few times to learn all the features of the skill.
 When you ask for "ingredients", you will both hear a list of ingredients, and see the list on your Alexa app or Echo Show screen, if you have one.
-When you ask to "begin cooking", the skill will guide you through each step in the process.
+When you ask to "begin cooking", the skill will guide you through each step in the process.  You can say Pause or Stop and then return to the skill and resume where you left off.
 
 
 1. Be sure you have installed Node.JS on your laptop.
-1. With the alexa-cookbook previously downloaded to a folder your laptop, open a command prompt and navigate to the cookbook folder (labs/LocalGuide/src).  Type in ```npm install```
+1. With the alexa-cookbook previously downloaded to a folder your laptop, open a command prompt and navigate to the cookbook folder (labs/Recipe/src).  Type in ```npm install```
 1. Next, navigate back up to the (labs/BreakfastSandwich) folder.  Type in ```node testflow```
 You should see a sequence of skill events be tested and the corresponding output.
 This will look best with a black-background command prompt.
 
 ### Lab 1: Customize this skill for your own Recipe
-Think of your hometown, current city, or favorite city.  Jot down a list of your favorite restaurants and attractions.
 
 Open your Lambda function and click on the Code tab.  Review the first section of the code that is customized for the Breakfast Sandwich meal.
 There are static data blocks called ```languageStrings```, and a ```data {}``` object containing details and lists.
@@ -61,7 +60,6 @@ Steps:
 1. Test your skill.  Open the skill, say "begin cooking", and then say "stop".  You may encounter errors the first couple of times the skill runs.  This is okay.  The skill code is setting up a new table in DynamoDB which may take 60 seconds to complete.
 
 Test your skill again.  Now, when you pause the skill during the recipe steps, you can re-launch the skill and hear the next step in your sequence.
-
 
 
 

@@ -85,11 +85,13 @@ var handlers = {
         this.emit('AMAZON.NextIntent');
     },
     'AMAZON.NoIntent': function () {
+
         this.emit(':tell', 'Okay, see you next time!');
     },
     'AMAZON.PauseIntent': function () {
         this.emit(':tell', 'Okay, you can come back to this skill to pick up where you left off.');
     },
+
     'AMAZON.NextIntent': function () {
         if (!this.attributes['currentStep'] ) {
             this.attributes['currentStep'] = 1;

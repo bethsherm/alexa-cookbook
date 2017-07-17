@@ -1,9 +1,9 @@
 
-# Labs: <a id="title">Local Guide</a>
+# Labs: <a id="title">Local Recommendations</a>
 
 ## What can I do in {town}? <a id="intro"></a>
 
-Local Guide is a skill that gives you suggestions on where to visit and dine in your local city or town.
+Local Recommendations is a skill that gives you suggestions on where to visit and dine in your local city or town.
 You can install the skill, and then update the Javascript code to make the skill an expert on what to do in your favorite location.
 
 ### Installation
@@ -18,8 +18,8 @@ When you ask for a meal such as "breakfast", the skill will scan the list of res
 
 ### Test
 1. Be sure you have installed Node.JS on your laptop.
-1. With the alexa-cookbook previously downloaded to a folder your laptop, open a command prompt and navigate to the cookbook folder (labs/LocalGuide/src).  Type in ```npm install```
-1. Next, navigate back up to the (labs/LocalGuide) folder.  Type in ```node testflow```
+1. With the alexa-cookbook previously downloaded to a folder your laptop, open a command prompt and navigate to the cookbook folder (labs/LocalRecommendations/src).  Type in ```npm install```
+1. Next, navigate back up to the (labs/LocalRecommendations) folder.  Type in ```node testflow```
 You should see a sequence of skill events be tested and the corresponding output.
 This will look best with a black-background command prompt.
 
